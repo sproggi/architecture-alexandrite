@@ -211,7 +211,7 @@
 - **БД:** master для записи + несколько read-replica для чтения. Разделение чтения и записи на уровне приложений (CQRS).
 - **Кэш:** Redis для сессий, часто читаемых данных, результатов расчёта.
 - **Очереди:** RabbitMQ в кластере, с persistent messages, DLQ, мониторингом.
-- **Мониторинг:** Prometheus + Grafana + Loki + Jaeger/OpenTelemetry.
+- **Мониторинг:** Prometheus + Grafana + Elasticsearch + Jaeger/OpenTelemetry.
 - **CI/CD:** автоматический деплой в dev, release и prod после прохождения тестов. Blue-green/canary.
 
 ### 4.2. Приложения
